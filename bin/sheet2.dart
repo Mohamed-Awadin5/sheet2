@@ -1,5 +1,12 @@
-import 'package:sheet2/sheet2.dart' as sheet2;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${sheet2.calculate()}!');
+void printNumbers(int n) {
+  for (int i = 1; i <= n; i++) {
+    print(i);
+  }
+}
+
+void main() {
+  int n = int.parse(stdin.readLineSync()!);
+  printNumbers(n);
 }

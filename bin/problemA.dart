@@ -1,5 +1,12 @@
-import 'package:sheet2/sheet2.dart' as sheet2;
+
+  import 'dart:io';
 
 void main(List<String> arguments) {
-  print('Hello world: ${sheet2.calculate()}!');
+
+  double R = double.parse(stdin.readLineSync()!);
+  double pi = 3.141592653;
+  
+  double area = pi * R * R;
+  
+  print(area.toStringAsFixed(9));
 }
